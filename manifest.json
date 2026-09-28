@@ -1,0 +1,114 @@
+{
+    "version": "4.1.2",
+    "generated": "2026-09-28 21:35:01",
+    "files": {
+        "assets.bin": {
+            "size": 18433966,
+            "sha256": "ae1890f0da8786ee35babc2b1acbdb6170887bfd5b6aa406e0cda9f4c1930f5a",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/assets.bin",
+            "required": true
+        },
+        "build_manifest.json": {
+            "size": 57,
+            "sha256": "db9f1ee2392ff8ed368089eb9de885ca0bca13e76264b58ee039530113bd900e",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/build_manifest.json",
+            "required": true
+        },
+        "config.json": {
+            "size": 74110,
+            "sha256": "634b350fdb799f82f68ef3a79a1ae9ad4da09dc1fda9b57056976c0b07645e28",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/config.json",
+            "required": true
+        },
+        "downloadmanifest.json": {
+            "size": 44,
+            "sha256": "92dc7ce774a250544cf1d572cd0975b2c7f70446f3646122dcf6b524769c1acd",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/downloadmanifest.json",
+            "required": true
+        },
+        "fantec.libxess.dll": {
+            "size": 903872,
+            "sha256": "918c163ea81b857d540656ef23673db422edb1ed6b67c02e2aece7bf5a459c97",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/fantec.libxess.dll",
+            "required": true
+        },
+        "game.exe": {
+            "size": 8640266,
+            "sha256": "9c44739c7af20134390405aec58831f39bc7b915e19af22ac04507080c86b041",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/game.exe",
+            "required": true
+        },
+        "graphics.xml": {
+            "size": 67,
+            "sha256": "9ce85279d94e55ff000fbc342a40ebfdac1ab1172d60e94428d429f7028a56ac",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/graphics.xml",
+            "required": true
+        },
+        "Hotfix_Engine.pkg": {
+            "size": 22817013,
+            "sha256": "1fc0c2e298b84219f45e4a8bb40cb4c88a7cdc698f1cb0430090c3fd2b7ed680",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/Hotfix_Engine.pkg",
+            "required": true
+        },
+        "launcher.json": {
+            "size": 169,
+            "sha256": "51c75537f0d2583c56c0030915354ff2232555fc2e010333914b44c5fa5c98c7",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/launcher.json",
+            "required": true
+        },
+        "manifest.json": {
+            "size": 5120,
+            "sha256": "1a92e9a67d7739b744a37f954d222c8ccd73d376c603dc926f651b726e9074e7",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/manifest.json",
+            "required": true
+        },
+        "media.zip": {
+            "size": 24672993,
+            "sha256": "f37ecaf0f6062065d166ca787d7b4bba3ad76c91f2bb85b47aa1a85ac64b6b79",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/media.zip",
+            "required": true
+        },
+        "memory_layout.ini": {
+            "size": 1280,
+            "sha256": "2b409d3a74833f1446ada774b041f2e021ba6f5c9224eba1f83ebfb3a74b173c",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/memory_layout.ini",
+            "required": true
+        },
+        "networkmanifest.xml": {
+            "size": 13164,
+            "sha256": "d2254e929766824da4279edfa6cb6634c3b7337119469b87d87a7202d27f239d",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/networkmanifest.xml",
+            "required": true
+        },
+        "radio_pack.rpf": {
+            "size": 10825498,
+            "sha256": "a8360fe434917e512391164553c68256f2053860b2f93c8c6162b77b4dae5644",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/radio_pack.rpf",
+            "required": true
+        },
+        "reader.exe": {
+            "size": 3309305,
+            "sha256": "c9124219493654e2fad208bdc682ffe221e5feaa21838ffad1413533a95a1841",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/reader.exe",
+            "required": true
+        },
+        "settings.ini": {
+            "size": 559,
+            "sha256": "e1091c7298ca1a203fdb2e4826a6b069757fc3339dfcda240b5a8ee49b5f5c21",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/settings.ini",
+            "required": true
+        },
+        "shader_cache.bin": {
+            "size": 16640901,
+            "sha256": "22a28a63c7a90f2cc7ebbe2f47860ae3aa686ceabcda1e2dda39fbfddbc55f50",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/shader_cache.bin",
+            "required": true
+        },
+        "simple_physics.dll": {
+            "size": 24452792,
+            "sha256": "e927876e88896e0603e845daa5f69c66919d6947940b1e372e247586e5811e9f",
+            "url": "https://raw.githubusercontent.com/Pindoza/gta6downloadfiles/main/simple_physics.dll",
+            "required": true
+        }
+    }
+}

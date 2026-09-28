@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NetworkManifest xmlns="http://schemas.microsoft.com/xbox/2012/networkmanifest">
+    <SocketDescriptions>
+        <SocketDescription Name="ServerSocket" SecureIpProtocol="Udp" BoundPort="5001">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Accept" />
+                <SecureDeviceSocketUsage Type="SendDebug" />
+                <SecureDeviceSocketUsage Type="ReceiveDebug" />
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="ConsoleSocket" SecureIpProtocol="Udp" BoundPort="5001">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Initiate"/>
+                <SecureDeviceSocketUsage Type="SendDebug"/>
+                <SecureDeviceSocketUsage Type="ReceiveDebug"/>
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="SecureServerSocket" SecureIpProtocol="Udp" BoundPort="30000-30050">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Accept" />
+                <SecureDeviceSocketUsage Type="SendChat" />
+                <SecureDeviceSocketUsage Type="SendGameData" />
+                <SecureDeviceSocketUsage Type="ReceiveChat" />
+                <SecureDeviceSocketUsage Type="ReceiveGameData" />
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="SecureConsoleSocket" SecureIpProtocol="Udp" BoundPort="1-65535">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Initiate" />
+                <SecureDeviceSocketUsage Type="SendChat" />
+                <SecureDeviceSocketUsage Type="SendGameData" />
+                <SecureDeviceSocketUsage Type="ReceiveChat" />
+                <SecureDeviceSocketUsage Type="ReceiveGameData" />
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="DebugSocket" SecureIpProtocol="Tcp" BoundPort="8081">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Initiate" />
+                <SecureDeviceSocketUsage Type="Accept" />
+                <SecureDeviceSocketUsage Type="SendDebug" />
+                <SecureDeviceSocketUsage Type="ReceiveDebug" />
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="TicketTrackerSocket" SecureIpProtocol="Tcp" BoundPort="8082">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Initiate" />
+                <SecureDeviceSocketUsage Type="SendDebug" />
+                <SecureDeviceSocketUsage Type="ReceiveDebug" />
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="FmodProfilerSocket" SecureIpProtocol="Tcp" BoundPort="9264">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Initiate" />
+                <SecureDeviceSocketUsage Type="Accept" />
+                <SecureDeviceSocketUsage Type="SendDebug" />
+                <SecureDeviceSocketUsage Type="ReceiveDebug" />
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="WwiseDiscoverySocket" SecureIpProtocol="Udp" BoundPort="24024">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Initiate" />
+                <SecureDeviceSocketUsage Type="Accept" />
+                <SecureDeviceSocketUsage Type="SendDebug" />
+                <SecureDeviceSocketUsage Type="ReceiveDebug" />
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="WwiseCommandSocket" SecureIpProtocol="Tcp" BoundPort="24025">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Initiate" />
+                <SecureDeviceSocketUsage Type="Accept" />
+                <SecureDeviceSocketUsage Type="SendDebug" />
+                <SecureDeviceSocketUsage Type="ReceiveDebug" />
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="WwiseNotificationSocket" SecureIpProtocol="Tcp" BoundPort="24026">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Initiate" />
+                <SecureDeviceSocketUsage Type="Accept" />
+                <SecureDeviceSocketUsage Type="SendDebug" />
+                <SecureDeviceSocketUsage Type="ReceiveDebug" />
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="AristenFXDesigner" SecureIpProtocol="Tcp" BoundPort="63500">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Initiate" />
+                <SecureDeviceSocketUsage Type="Accept" />
+                <SecureDeviceSocketUsage Type="SendDebug" />
+                <SecureDeviceSocketUsage Type="ReceiveDebug" />
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="PCQosSocketInitiator" SecureIpProtocol="Udp" BoundPort="0">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Initiate" />
+                <SecureDeviceSocketUsage Type="Accept" />
+                <SecureDeviceSocketUsage Type="SendInsecure" />
+                <SecureDeviceSocketUsage Type="ReceiveInsecure" />
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="PCQosSocketAcceptor" SecureIpProtocol="Udp" BoundPort="3075">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Initiate" />
+                <SecureDeviceSocketUsage Type="Accept" />
+                <SecureDeviceSocketUsage Type="SendInsecure" />
+                <SecureDeviceSocketUsage Type="ReceiveInsecure" />
+            </AllowedUsages>
+        </SocketDescription>
+        <SocketDescription Name="HydraulicTraffic" SecureIpProtocol="Udp" BoundPort="5200">
+            <AllowedUsages>
+                <SecureDeviceSocketUsage Type="Initiate" />
+                <SecureDeviceSocketUsage Type="Accept" />
+                <SecureDeviceSocketUsage Type="SendInsecure" />
+                <SecureDeviceSocketUsage Type="ReceiveInsecure" />
+            </AllowedUsages>
+        </SocketDescription>
+    </SocketDescriptions>
+    <SecureDeviceAssociationTemplates>
+        <SecureDeviceAssociationTemplate Name="PeerTraffic" InitiatorSocketDescription="ConsoleSocket" AcceptorSocketDescription="ServerSocket" MultiplayerSessionRequirement="None">
+            <AllowedUsages>
+                <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnWindowsDesktop"/>
+            </AllowedUsages>
+        </SecureDeviceAssociationTemplate>
+        <SecureDeviceAssociationTemplate Name="SecurePeerTraffic" InitiatorSocketDescription="SecureConsoleSocket" AcceptorSocketDescription="SecureServerSocket" MultiplayerSessionRequirement="Required">
+            <AllowedUsages>
+                <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnWindowsDesktop"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnXboxLiveCompute" />
+                <SecureDeviceAssociationUsage Type="InitiateFromOtherDevice" />
+            </AllowedUsages>
+        </SecureDeviceAssociationTemplate>
+        <SecureDeviceAssociationTemplate Name="DebugTraffic" InitiatorSocketDescription="DebugSocket" AcceptorSocketDescription="DebugSocket" MultiplayerSessionRequirement="None">
+            <AllowedUsages>
+                <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnWindowsDesktop"/>
+            </AllowedUsages>
+        </SecureDeviceAssociationTemplate>
+        <SecureDeviceAssociationTemplate Name="TicketTrackerTraffic" InitiatorSocketDescription="TicketTrackerSocket" AcceptorSocketDescription="TicketTrackerSocket" MultiplayerSessionRequirement="None">
+            <AllowedUsages>
+                <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnWindowsDesktop"/>
+            </AllowedUsages>
+        </SecureDeviceAssociationTemplate>
+        <SecureDeviceAssociationTemplate Name="FmodProfilerSocket" InitiatorSocketDescription="FmodProfilerSocket" AcceptorSocketDescription="FmodProfilerSocket" MultiplayerSessionRequirement="None">
+            <AllowedUsages>
+                <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnWindowsDesktop"/>
+            </AllowedUsages>
+        </SecureDeviceAssociationTemplate>
+        <SecureDeviceAssociationTemplate Name="WwiseDiscovery" InitiatorSocketDescription="WwiseDiscoverySocket" AcceptorSocketDescription="WwiseDiscoverySocket" MultiplayerSessionRequirement="None">
+            <AllowedUsages>
+                <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnWindowsDesktop"/>
+            </AllowedUsages>
+        </SecureDeviceAssociationTemplate>
+        <SecureDeviceAssociationTemplate Name="WwiseCommand" InitiatorSocketDescription="WwiseCommandSocket" AcceptorSocketDescription="WwiseCommandSocket" MultiplayerSessionRequirement="None">
+            <AllowedUsages>
+                <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnWindowsDesktop"/>
+            </AllowedUsages>
+        </SecureDeviceAssociationTemplate>
+        <SecureDeviceAssociationTemplate Name="WwiseNotification" InitiatorSocketDescription="WwiseNotificationSocket" AcceptorSocketDescription="WwiseNotificationSocket" MultiplayerSessionRequirement="None">
+            <AllowedUsages>
+                <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnWindowsDesktop"/>
+            </AllowedUsages>
+        </SecureDeviceAssociationTemplate>
+        <SecureDeviceAssociationTemplate Name="AristenFXDesigner" InitiatorSocketDescription="AristenFXDesigner" AcceptorSocketDescription="AristenFXDesigner" MultiplayerSessionRequirement="None">
+            <AllowedUsages>
+                <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnWindowsDesktop"/>
+            </AllowedUsages>
+        </SecureDeviceAssociationTemplate>
+        <SecureDeviceAssociationTemplate Name="InsecureQosTraffic" InitiatorSocketDescription="PCQosSocketInitiator" AcceptorSocketDescription="PCQosSocketAcceptor" MultiplayerSessionRequirement="None">
+            <AllowedUsages>
+                <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnWindowsDesktop"/>
+            </AllowedUsages>
+        </SecureDeviceAssociationTemplate>
+        <SecureDeviceAssociationTemplate Name="HydraulicTraffic" InitiatorSocketDescription="HydraulicTraffic" AcceptorSocketDescription="HydraulicTraffic" MultiplayerSessionRequirement="None">
+            <AllowedUsages>
+                <SecureDeviceAssociationUsage Type="InitiateFromMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnMicrosoftConsole"/>
+                <SecureDeviceAssociationUsage Type="InitiateFromWindowsDesktop"/>
+                <SecureDeviceAssociationUsage Type="AcceptOnWindowsDesktop"/>
+            </AllowedUsages>
+        </SecureDeviceAssociationTemplate>
+    </SecureDeviceAssociationTemplates>
+</NetworkManifest>
+

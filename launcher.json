@@ -1,0 +1,1 @@
+{	file: command[game.exe -Xms{minpropram} -Xmg{propram} --media.zip --reader.exe -Hotfix_Engine.pkg],	verify: command[reader.exe --assets.bin --hash({hashassets})]}	
